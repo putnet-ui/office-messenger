@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>นโยบายความเป็นส่วนตัว · Office Messenger</title>
+  <meta name="description" content="นโยบายความเป็นส่วนตัวของแอป Office Messenger (แมสไทย)">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="./"><span class="mark" aria-hidden="true">✉</span>Office Messenger</a>
+    <nav class="top" aria-label="เมนู">
+      <a href="./">หน้าแรก</a>
+      <a href="privacy.html" aria-current="page">นโยบายความเป็นส่วนตัว</a>
+      <a href="delete-account.html">ลบบัญชีและข้อมูล</a>
+    </nav>
+  </header>
+
+  <div class="lang"><a href="#th">ไทย</a><a href="#en">English</a></div>
+
+  <section id="th">
+    <h1>นโยบายความเป็นส่วนตัว</h1>
+    <p class="meta">แอป Office Messenger (แมสไทย) · มีผลตั้งแต่ 25 ตุลาคม 2569</p>
+
+    <p>นโยบายนี้อธิบายว่าแอป Office Messenger (“แอป”) เก็บ ใช้ และดูแลข้อมูลส่วนบุคคลอย่างไร ตามพระราชบัญญัติคุ้มครองข้อมูลส่วนบุคคล พ.ศ. 2562 (PDPA)</p>
+
+    <h2>1. ใครดูแลข้อมูล</h2>
+    <ul>
+      <li>แอปพัฒนาและให้บริการโดย <strong>putNet</strong> (“ผู้พัฒนา”) ติดต่อ <a href="mailto:putnet@gmail.com">putnet@gmail.com</a></li>
+      <li><strong>ข้อมูลงานของทีม</strong> (งาน ผลการวิ่ง รูปหลักฐาน ค่าใช้จ่าย) เป็นของบริษัทหรือเจ้าของทีมที่ตั้งทีมนั้น บริษัทเป็น “ผู้ควบคุมข้อมูลส่วนบุคคล” ส่วนผู้พัฒนาเป็น “ผู้ประมวลผลข้อมูล” ที่เก็บข้อมูลให้ตามที่ทีมใช้งาน (เฉพาะทีมที่เลือกเซิร์ฟเวอร์ของแอป)</li>
+      <li><strong>ข้อมูลบัญชีล็อกอิน</strong> บนเซิร์ฟเวอร์ของแอป ผู้พัฒนาเป็นผู้ควบคุมข้อมูล</li>
+    </ul>
+
+    <h2>2. ที่เก็บข้อมูลขึ้นกับโหมดที่ทีมเลือก</h2>
+    <div class="table-scroll">
+      <table>
+        <tr><th>โหมด</th><th>ข้อมูลอยู่ที่</th><th>ผู้พัฒนาได้รับข้อมูลไหม</th></tr>
+        <tr><td>เซิร์ฟเวอร์ของแอป (Supabase)</td><td>Supabase ศูนย์ข้อมูลสิงคโปร์</td><td>เก็บให้ในฐานะผู้ประมวลผล</td></tr>
+        <tr><td>Google Sheets ของเจ้าของทีม</td><td>Google Sheets และ Google Drive ในบัญชีของเจ้าของทีม</td><td>ไม่ได้รับ</td></tr>
+        <tr><td>ในเครื่องนี้ (SQLite) / ข้อมูลตัวอย่าง</td><td>ในโทรศัพท์เครื่องนั้น</td><td>ไม่ได้รับ</td></tr>
+      </table>
+    </div>
+
+    <h2>3. ข้อมูลที่เก็บ</h2>
+    <div class="table-scroll">
+      <table>
+        <tr><th>ประเภท</th><th>รายละเอียด</th></tr>
+        <tr><td>บัญชีล็อกอิน</td><td>ชื่อ อีเมล รูปโปรไฟล์ (ถ้ามี) และรหัสบัญชีที่ได้จาก Google หรือ Facebook เมื่อล็อกอินเข้าเซิร์ฟเวอร์ของแอป แอปขอเฉพาะสิทธิ์ email และ profile</td></tr>
+        <tr><td>สมาชิกทีม</td><td>ชื่อที่ทีมเรียก บทบาท (ผู้ดูแล / ผู้มอบงาน / Messenger) วันที่เข้าทีม</td></tr>
+        <tr><td>งาน</td><td>ปลายทาง ที่อยู่ ชื่อและเบอร์โทรผู้ติดต่อ เอกสารที่ส่ง/รับกลับ กำหนดส่ง หมายเหตุ เลขพัสดุ — ผู้มอบงานเป็นผู้กรอก</td></tr>
+        <tr><td>ผลการวิ่ง</td><td>ผลแต่ละจุด ชื่อผู้รับ หมายเหตุ เวลา ผู้ยืนยันผล สรุปงานรายวัน</td></tr>
+        <tr><td>รูปหลักฐานและพิกัด</td><td>รูปที่ถ่ายจากกล้องในแอป เวลาที่ถ่าย และพิกัด GPS ณ ตอนถ่าย (เฉพาะเมื่ออนุญาตสิทธิ์ตำแหน่ง)</td></tr>
+        <tr><td>ค่าใช้จ่าย</td><td>ประเภท จำนวนเงิน หมายเหตุ รูปใบเสร็จ</td></tr>
+        <tr><td>ความปลอดภัย</td><td>รหัสบัญชีและเวลาที่กรอกรหัสเชิญผิด (ใช้กันการสุ่มเดารหัส)</td></tr>
+      </table>
+    </div>
+    <p><strong>แอปไม่เก็บ:</strong> รายชื่อผู้ติดต่อในเครื่อง ตำแหน่งเบื้องหลัง รูปในคลังภาพ และไม่มีโฆษณาหรือเครื่องมือติดตามพฤติกรรม (analytics)</p>
+
+    <h2>4. สิทธิ์ที่แอปขอในเครื่อง</h2>
+    <ul>
+      <li><strong>กล้อง</strong> — ถ่ายรูปหลักฐานการส่งงาน และสแกน QR เชิญเข้าทีม</li>
+      <li><strong>ตำแหน่ง</strong> (ขณะใช้แอปเท่านั้น) — บันทึกพิกัดคู่กับรูปหลักฐาน ณ ตอนถ่าย ไม่ติดตามตำแหน่งตลอดเวลา</li>
+    </ul>
+    <p>ปฏิเสธสิทธิ์ได้ แอปยังใช้งานได้ แต่รูปจะไม่มีพิกัด หรือสแกน QR ไม่ได้</p>
+
+    <h2>5. ใช้ข้อมูลเพื่ออะไร</h2>
+    <ul>
+      <li>ให้บริการตามที่ทีมใช้งาน: แสดงงาน ซิงก์ข้อมูลระหว่างเครื่อง ยืนยันผล คำนวณ Incentive และใบเบิก (ฐานสัญญา)</li>
+      <li>ยืนยันตัวตนและแยกสิทธิ์ให้แต่ละทีมเห็นเฉพาะข้อมูลของตัวเอง (ฐานสัญญา)</li>
+      <li>รักษาความปลอดภัยของระบบ เช่น จำกัดการกรอกรหัสเชิญผิดและโควตาการใช้งาน (ฐานประโยชน์โดยชอบด้วยกฎหมาย)</li>
+      <li>ติดต่อเรื่องบัญชีหรือการเปลี่ยนแปลงสำคัญของบริการ</li>
+    </ul>
+    <p>ผู้พัฒนา<strong>ไม่ขาย</strong>ข้อมูล ไม่ใช้ข้อมูลเพื่อโฆษณา และไม่นำข้อมูลงานของทีมไปใช้ฝึกโมเดล AI</p>
+
+    <h2>6. ผู้ให้บริการที่เกี่ยวข้องและการส่งข้อมูลไปต่างประเทศ</h2>
+    <ul>
+      <li><strong>Supabase</strong> — ฐานข้อมูล ระบบล็อกอิน และที่เก็บรูป สำหรับโหมดเซิร์ฟเวอร์ของแอป ข้อมูลอยู่ที่ศูนย์ข้อมูลในสิงคโปร์ จึงเป็นการส่งข้อมูลไปต่างประเทศ ผู้ให้บริการมีมาตรการคุ้มครองข้อมูลตามมาตรฐานสากล</li>
+      <li><strong>Google</strong> และ <strong>Meta (Facebook)</strong> — ยืนยันตัวตนเมื่อเลือกล็อกอินด้วยบัญชีนั้น และ Google Sheets / Drive ในโหมด Google Sheets (อยู่ในบัญชีของเจ้าของทีมเอง)</li>
+      <li><strong>Google Play</strong> — ช่องทางดาวน์โหลด และการชำระเงินหากเลือกสนับสนุนผู้พัฒนา Google เป็นผู้ดำเนินการชำระเงิน ผู้พัฒนาไม่ได้รับข้อมูลบัตร</li>
+    </ul>
+    <p>ผู้พัฒนาอาจเปิดเผยข้อมูลเมื่อกฎหมายกำหนดหรือมีคำสั่งจากหน่วยงานที่มีอำนาจ</p>
+
+    <h2>7. การรักษาความปลอดภัย</h2>
+    <ul>
+      <li>รับส่งข้อมูลผ่าน HTTPS · แต่ละทีมเห็นเฉพาะข้อมูลของตัวเองด้วย Row Level Security · การเขียนข้อมูลผ่านฟังก์ชันที่ตรวจสิทธิ์ทุกครั้ง</li>
+      <li>รูปเก็บในที่เก็บส่วนตัว เปิดดูผ่านลิงก์ชั่วคราว 1 ชั่วโมง · ลบรูปได้เฉพาะผู้ดูแลทีม</li>
+      <li>ข้อมูลล็อกอินในเครื่องเก็บใน Android Keystore / iOS Keychain · รหัสเชิญยาว 10 ตัว อายุ 7 วัน</li>
+      <li>หากเกิดเหตุละเมิดข้อมูล ผู้พัฒนาจะแจ้งสำนักงานคณะกรรมการคุ้มครองข้อมูลส่วนบุคคลภายใน 72 ชั่วโมงตามกฎหมาย และแจ้งทีมที่ได้รับผลกระทบ</li>
+    </ul>
+
+    <h2>8. ระยะเวลาเก็บข้อมูล</h2>
+    <ul>
+      <li>ข้อมูลงานของทีมเก็บจนกว่าผู้ดูแลทีมจะลบทีม</li>
+      <li>บัญชีล็อกอินเก็บจนกว่าผู้ใช้จะลบบัญชี เมื่อลบบัญชี ชื่อในประวัติงานของทีมที่ยังมีคนอื่นอยู่จะยังอยู่ เพราะเป็นข้อมูลงานของบริษัท</li>
+      <li>ระบบสำรองข้อมูลรายวันเก็บไว้ 7 วัน ข้อมูลที่ลบแล้วจึงอาจยังอยู่ในข้อมูลสำรองได้นานสุด 7 วัน</li>
+    </ul>
+    <p>วิธีลบ: <a href="delete-account.html">การลบบัญชีและข้อมูล</a></p>
+
+    <h2>9. สิทธิ์ของคุณ</h2>
+    <p>คุณมีสิทธิ์ขอเข้าถึงและรับสำเนา ขอแก้ไข ขอลบ ขอระงับหรือคัดค้านการใช้ ขอโอนย้ายข้อมูล (ส่งออก CSV ได้ในแอป) และถอนความยินยอม เช่น ปิดสิทธิ์ตำแหน่งในเครื่อง รวมถึงร้องเรียนต่อสำนักงานคณะกรรมการคุ้มครองข้อมูลส่วนบุคคล (สคส.)</p>
+    <p>ข้อมูลงานของทีมเป็นของบริษัท กรุณาติดต่อผู้ดูแลทีมก่อน ผู้พัฒนาจะดำเนินการตามคำขอของบริษัท สำหรับคำขออื่นติดต่อ <a href="mailto:putnet@gmail.com">putnet@gmail.com</a> ผู้พัฒนาจะตอบภายใน 30 วัน</p>
+
+    <h2>10. ผู้เยาว์</h2>
+    <p>แอปออกแบบมาเพื่อการทำงาน ไม่ได้มีไว้ให้ผู้เยาว์ใช้งาน</p>
+
+    <h2>11. การเปลี่ยนแปลงนโยบาย</h2>
+    <p>หากเปลี่ยนแปลงสาระสำคัญ ผู้พัฒนาจะแจ้งในหน้านี้และในแอป พร้อมปรับวันที่มีผลด้านบน</p>
+
+    <h2>12. ติดต่อ</h2>
+    <p>putNet · อีเมล <a href="mailto:putnet@gmail.com">putnet@gmail.com</a></p>
+  </section>
+
+  <hr>
+
+  <section id="en" lang="en">
+    <h1>Privacy Policy</h1>
+    <p class="meta">Office Messenger (แมสไทย) · Effective 25 October 2026</p>
+    <p>This policy explains how the Office Messenger app (“the app”) collects, uses and protects personal data under Thailand’s Personal Data Protection Act B.E. 2562 (PDPA).</p>
+
+    <h2>1. Who is responsible</h2>
+    <ul>
+      <li>The app is developed and operated by <strong>putNet</strong> (“the developer”), contact <a href="mailto:putnet@gmail.com">putnet@gmail.com</a>.</li>
+      <li><strong>Team work data</strong> (jobs, runs, proof photos, expenses) belongs to the company or team owner, who is the data controller. When a team uses the app’s server, the developer stores it as a data processor.</li>
+      <li>For <strong>sign-in accounts</strong> on the app’s server, the developer is the data controller.</li>
+    </ul>
+
+    <h2>2. Where data is stored depends on the team’s choice</h2>
+    <ul>
+      <li><strong>App’s server (Supabase)</strong> — Supabase data centre in Singapore; stored by the developer as processor.</li>
+      <li><strong>Team owner’s Google Sheets</strong> — in the owner’s own Google Sheets and Drive; the developer does not receive it.</li>
+      <li><strong>This phone (SQLite) / sample data</strong> — on the device only; the developer does not receive it.</li>
+    </ul>
+
+    <h2>3. Data we collect</h2>
+    <ul>
+      <li><strong>Sign-in account:</strong> name, email, profile picture (if any) and account ID from Google or Facebook. Only the email and profile scopes are requested.</li>
+      <li><strong>Team members:</strong> display name, role, join date.</li>
+      <li><strong>Jobs:</strong> destination, address, contact name and phone, documents, due date, notes, tracking numbers — entered by assigners.</li>
+      <li><strong>Runs:</strong> outcome per stop, receiver name, notes, time, who confirmed, daily summaries.</li>
+      <li><strong>Proof photos and location:</strong> photos taken with the in-app camera, time taken and GPS position at that moment (only if location permission is granted).</li>
+      <li><strong>Expenses:</strong> type, amount, notes, receipt photo.</li>
+      <li><strong>Security:</strong> account ID and time of wrong invite-code attempts (to stop code guessing).</li>
+    </ul>
+    <p>The app does <strong>not</strong> collect device contacts, background location or gallery photos, and has no ads or analytics.</p>
+
+    <h2>4. Device permissions</h2>
+    <p><strong>Camera</strong> for proof photos and scanning invite QR codes. <strong>Location</strong> (while using the app only) to save the position with a proof photo when it is taken. You can decline; the app still works without location data or QR scanning.</p>
+
+    <h2>5. How we use data</h2>
+    <p>To provide the service (show jobs, sync between devices, confirm results, calculate incentives and claims), to authenticate users and keep each team’s data separate, to protect the system (invite-code limits, usage quotas), and to contact you about your account. We do <strong>not</strong> sell data, use it for advertising, or use team data to train AI models.</p>
+
+    <h2>6. Service providers and international transfer</h2>
+    <p><strong>Supabase</strong> (database, sign-in, photo storage; Singapore — an international transfer protected by the provider’s standard safeguards), <strong>Google</strong> and <strong>Meta (Facebook)</strong> for sign-in, Google Sheets/Drive in Sheets mode (in the owner’s own account), and <strong>Google Play</strong> for distribution and payments if you choose to support the developer (we never receive card details). We may disclose data when required by law.</p>
+
+    <h2>7. Security</h2>
+    <p>HTTPS in transit; Row Level Security so each team only sees its own data; writes go through permission-checked functions; photos in private storage viewed through 1-hour links and deletable only by team admins; sign-in sessions stored in Android Keystore / iOS Keychain; 10-character invite codes valid for 7 days. In case of a data breach we notify the PDPC within 72 hours as required and inform affected teams.</p>
+
+    <h2>8. Retention</h2>
+    <p>Team data is kept until a team admin deletes the team. Sign-in accounts are kept until the user deletes their account; names in the work history of teams that still have other members remain as company records. Daily backups are kept for 7 days, so deleted data may remain in backups for up to 7 days. See <a href="delete-account.html#en">Account &amp; data deletion</a>.</p>
+
+    <h2>9. Your rights</h2>
+    <p>You may request access and a copy, correction, deletion, restriction or objection, data portability (CSV export is built in), withdraw consent (for example by turning off location permission), and complain to Thailand’s Personal Data Protection Committee (PDPC). For team work data please contact your team admin first; the developer acts on the company’s instructions. Other requests: <a href="mailto:putnet@gmail.com">putnet@gmail.com</a> — we reply within 30 days.</p>
+
+    <h2>10. Minors</h2>
+    <p>The app is designed for work and is not intended for minors.</p>
+
+    <h2>11. Changes</h2>
+    <p>We will announce material changes on this page and in the app and update the effective date.</p>
+
+    <h2>12. Contact</h2>
+    <p>putNet · <a href="mailto:putnet@gmail.com">putnet@gmail.com</a></p>
+  </section>
+
+  <footer>© 2026 Office Messenger (แมสไทย)</footer>
+</div>
+</body>
+</html>
